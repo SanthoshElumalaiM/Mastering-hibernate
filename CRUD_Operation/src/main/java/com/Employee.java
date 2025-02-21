@@ -42,6 +42,10 @@ public class Employee {
 	public void setPhoneNo(long phoneNo) {
 		this.phoneNo = phoneNo;
 	}
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", job=" + job + ", sal=" + sal + ", phoneNo=" + phoneNo + "]";
+	}
 	
 
 }
