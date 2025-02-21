@@ -12,11 +12,11 @@ public class SaveEmployee
 	{
 		
 		Employee e=new Employee();
-		e.setId(1);
-		e.setName("sant");
-		e.setJob("Java_developer");
-		e.setSal(100000);
-		e.setPhoneNo(33892);
+		e.setId(2);
+		e.setName("Hardik");
+		e.setJob("Tester");
+		e.setSal(12000);
+		e.setPhoneNo(879697);
 		
 		EntityManagerFactory emf=Persistence.createEntityManagerFactory("dev");
 		EntityManager em=emf.createEntityManager();
@@ -24,6 +24,8 @@ public class SaveEmployee
 		
 		et.begin();
 		em.persist(e);
+//		em.merge(e);
+			
 		et.commit();
 		System.out.println("data saved");
 		
