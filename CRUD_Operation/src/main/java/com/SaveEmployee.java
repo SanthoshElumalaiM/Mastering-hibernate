@@ -12,11 +12,11 @@ public class SaveEmployee
 	{
 		
 		Employee e=new Employee();
-		e.setId(2);
-		e.setName("Hardik");
-		e.setJob("All-Rounder");
-		e.setSal(20000);
-		e.setPhoneNo(789373);
+		e.setId(3);
+		e.setName("Prabha");
+		e.setJob("developer");
+		e.setSal(1000);
+		e.setPhoneNo(787835);
 		
 		EntityManagerFactory emf=Persistence.createEntityManagerFactory("dev");
 		EntityManager em=emf.createEntityManager();
