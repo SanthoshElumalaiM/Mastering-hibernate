@@ -13,6 +13,7 @@ public class Product {
 	private double price;
 	private String colour;
 	private int quantity;
+	private double rating;
 	public int getProduct_id() {
 		return product_id;
 	}
@@ -49,11 +50,21 @@ public class Product {
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
+	public double getRating() {
+		return rating;
+	}
+	public void setRating(double rating) {
+		this.rating = rating;
+	}
 	@Override
 	public String toString() {
 		return "Product [product_id=" + product_id + ", product_name=" + product_name + ", brand=" + brand + ", price="
-				+ price + ", colour=" + colour + ", quantity=" + quantity + "]";
+				+ price + ", colour=" + colour + ", quantity=" + quantity + ", rating=" + rating + "]";
 	}
+	
+	
+	
+	
 	
 	
 	
