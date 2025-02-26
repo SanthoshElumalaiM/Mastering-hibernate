@@ -1,12 +1,15 @@
 package com;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class Address {
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int aid;
 	private String street;
 	private String city;
@@ -43,5 +46,11 @@ public class Address {
 	public void setPincode(int pincode) {
 		this.pincode = pincode;
 	}
+	@Override
+	public String toString() {
+		return "Address [aid=" + aid + ", street=" + street + ", city=" + city + ", state=" + state + ", pincode="
+				+ pincode + "]";
+	}
+	
 	
 }
