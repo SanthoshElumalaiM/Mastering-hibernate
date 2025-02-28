@@ -23,6 +23,7 @@ public class MainClass {
 		
 		a.setAno(368539947);
 		a.setFatherName("Elumalai");
+		a.setAddress("cheyyar");
 		a.setDob("20/12/2002");
 		a.setPerson(p);
 		
