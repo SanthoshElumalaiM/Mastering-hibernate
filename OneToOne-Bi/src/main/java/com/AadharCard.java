@@ -16,7 +16,7 @@ public class AadharCard {
 	private String address;
 	private String dob;
 	
-	@OneToOne
+	@OneToOne(mappedBy = "aadharCard")
 	private Person person;
 
 	public long getAno() {
