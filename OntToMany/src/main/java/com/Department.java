@@ -46,6 +46,11 @@ public class Department {
 	public void setFee(double fee) {
 		this.fee = fee;
 	}
+	@Override
+	public String toString() {
+		return "Department [id=" + id + ", deptName=" + deptName + ", hod=" + hod + ", noOfStudents=" + noOfStudents
+				+ ", fee=" + fee + "]";
+	}
 	
 	
 }
