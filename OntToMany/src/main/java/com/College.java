@@ -1,6 +1,5 @@
 package com;
 
-
 import java.util.List;
 
 import jakarta.persistence.Entity;
@@ -8,9 +7,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+
 @Entity
 public class College {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
@@ -18,7 +18,7 @@ public class College {
 	private String location;
 	private String email;
 	private long contact;
-	
+
 	@OneToMany
 	private List<Department> departments;
 
@@ -69,6 +69,13 @@ public class College {
 	public void setDepartments(List<Department> departments) {
 		this.departments = departments;
 	}
+
+	@Override
+	public String toString() {
+		return "College [id=" + id + ", CollegeName=" + CollegeName + ", location=" + location + ", email=" + email
+				+ ", contact=" + contact + "]";
+	}
+
 	
 	
 
