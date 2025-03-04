@@ -20,7 +20,7 @@ public class Batch {
 	private String timing;
 	private int noOfStudents;
 	
-	@OneToMany
+	@OneToMany(mappedBy = "batch")
 	private List< Student> students;
 
 	public int getId() {
