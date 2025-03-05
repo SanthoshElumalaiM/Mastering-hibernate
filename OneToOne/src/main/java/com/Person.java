@@ -2,7 +2,9 @@ package com;
 
 import javax.annotation.processing.Generated;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -20,7 +22,7 @@ public class Person {
 	private String email;	
 	private long phone;
 
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL,fetch=FetchType.LAZY)
 	
 	private Address address;
 
