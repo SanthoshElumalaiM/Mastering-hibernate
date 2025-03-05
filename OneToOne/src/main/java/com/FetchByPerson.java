@@ -14,12 +14,12 @@ public class FetchByPerson {
 		
 		
 		Person p=em.find(Person.class, 1);
-		p.setAddress(null);
-		et.begin();
-		em.merge(p);
-		et.commit();
-		
-		System.out.println(p);
+//		p.setAddress(null);
+//		et.begin();
+//		em.merge(p);
+//		et.commit();
+//		
+//		System.out.println(p);
 	}
 
 }
