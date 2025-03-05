@@ -14,13 +14,13 @@ public class Fetch {
 		EntityManager em=emf.createEntityManager();
 		
 		College c=em.find(College.class, 1);
-		System.out.println(c);
-		
-		List<Department> list=c.getDepartments();
-		for(Department d: list)
-		{
-			System.out.println(d);
-		}
+//		System.out.println(c);
+//		
+//		List<Department> list=c.getDepartments();
+//		for(Department d: list)
+//		{
+//			System.out.println(d);
+//		}
 	}
 
 }
