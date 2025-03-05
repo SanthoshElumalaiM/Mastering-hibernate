@@ -49,10 +49,14 @@ public class MainClass {
 		c.setDepartments(d);
 		
 		et.begin();
-		em.persist(c);
-		em.persist(d1);
-		em.persist(d2);
-		em.persist(d3);
+		em.remove(c);
+		em.remove(d1);
+		em.remove(d2);
+		em.remove(d3);
+		
+//		em.persist(d1);
+//		em.persist(d2);
+//		em.persist(d3);
 		et.commit();
 		System.out.println("Data Saved...");
 	}
