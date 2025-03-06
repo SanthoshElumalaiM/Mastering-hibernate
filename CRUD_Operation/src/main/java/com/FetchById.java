@@ -12,6 +12,7 @@ public class FetchById {
 		EntityManager em1=emf.createEntityManager();
 		EntityManager em2=emf.createEntityManager();
 		
+		//firstLevel cache memory
 		em1.find(Employee.class, 1);
 		em1.find(Employee.class, 1);
 		em1.find(Employee.class, 2);
