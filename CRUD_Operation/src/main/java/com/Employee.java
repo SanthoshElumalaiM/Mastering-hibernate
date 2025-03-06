@@ -1,9 +1,15 @@
 package com;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
+import jakarta.persistence.Cacheable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
+@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
+@Cacheable
 public class Employee {
 	
 	@Id
