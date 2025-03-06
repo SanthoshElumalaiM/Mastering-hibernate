@@ -9,9 +9,17 @@ public class FetchById {
 	public static void main(String[] args) {
 		
 		EntityManagerFactory emf=Persistence.createEntityManagerFactory("dev");
-		EntityManager em=emf.createEntityManager();
-		Employee emp=new Employee();
-		Employee e=em.find(Employee.class, 1);
-		System.out.println(e);
+		EntityManager em1=emf.createEntityManager();
+		EntityManager em2=emf.createEntityManager();
+		
+		em1.find(Employee.class, 1);
+		em1.find(Employee.class, 1);
+		em1.find(Employee.class, 2);
+		em1.find(Employee.class, 2);
+		em2.find(Employee.class, 1);
+		em2.find(Employee.class, 1);
+		em2.find(Employee.class, 2);
+		em2.find(Employee.class, 2);
+//		System.out.println(e);
 	}
 }
